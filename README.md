@@ -1,4 +1,4 @@
-readme_text = '''# <img src="assets/logo.png" width="35" height="35"> WinMagisk v1
+<img src="assets/logo.png" width="35" height="35"> WinMagisk v1
 
 ![GitHub License](https://img.shields.io/github/license/solevoy69/WinMagisk?style=for-the-badge&color=00d2ff)
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue?style=for-the-badge)
