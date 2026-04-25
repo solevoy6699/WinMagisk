@@ -5,7 +5,6 @@ Write-Host "===============================================" -ForegroundColor Cy
 Write-Host "    WINMAGISK UNIVERSAL ACTIVATOR ENGINE       " -ForegroundColor Cyan
 Write-Host "===============================================" -ForegroundColor Cyan
 
-# 1. Список GVLK ключей (официальные ключи Microsoft для KMS)
 $keys = @{
     "Professional"      = "W269N-WFGWX-YVC9B-4J6C9-T83GX"
     "Professional N"    = "MH37W-N47XK-V7XM9-C7227-GCQG9"
@@ -16,7 +15,6 @@ $keys = @{
     "Core Single Lang"  = "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH"
 }
 
-# 2. Определяем редакцию системы
 $edition = (Get-CimInstance Win32_OperatingSystem).Caption
 Write-Host "[*] Система: $edition" -ForegroundColor White
 
@@ -33,12 +31,10 @@ if (-not $selectedKey) {
     $selectedKey = $keys["Professional"]
 }
 
-# 3. Процесс активации через slmgr
 Write-Host "[>] Установка ключа: $selectedKey" -ForegroundColor Gray
 & slmgr.vbs /ipk $selectedKey | Out-Null
 
 Write-Host "[>] Подключение к серверу KMS..." -ForegroundColor Gray
-# Используем один из стабильных мировых серверов
 & slmgr.vbs /skms kms8.msguides.com | Out-Null
 
 Write-Host "[>] Финализация активации..." -ForegroundColor Cyan
