@@ -13,7 +13,7 @@ WinMagisk поддерживает модульную архитектуру. Э
 
 Пример правильной структуры:
 ```text
-WinMagisk/
+├── WinMagisk.exe/
 └── modules/
     └── user_modules/
         ├── MyCoolTweak/
