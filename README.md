@@ -22,6 +22,11 @@
 
 ---
 
+## 🛠️ Разработка модулей
+Если ты хочешь добавить свои скрипты в WinMagisk, загляни в моё руководство:
+
+[![Guide](https://img.shields.io/badge/Открыть-Гайд_по_модулям-00d2ff?style=for-the-badge&logo=read-the-docs&logoColor=white)](MODULES_GUIDE.md)
+
 🤝 Open Source & Contributing
 Проект является полностью Open Source. Я верю в прозрачность софта, который работает с системой.
 
