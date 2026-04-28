@@ -65,7 +65,7 @@ echo [+] Проверка завершена.
 pause
 ```
 
-3. Python (run.py)
+Python (run.py)
 ```code
 import os
 import platform
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     main()
 ```
 
-4. C++ / Executable (run.exe)
+C++ / Executable (run.exe)
 ```code
 #include <iostream>
 #include <windows.h>
