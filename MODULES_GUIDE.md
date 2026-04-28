@@ -16,10 +16,9 @@ WinMagisk поддерживает модульную архитектуру. Э
 ├── WinMagisk.exe/
 └── modules/
     └── user_modules/
-        ├── MyCoolTweak/
-        │   └── run.ps1       <-- Исполняемый файл
-        └── SpeedOptimizer/
-            └── run.exe       <-- Исполняемый файл
+        └── MyCoolTweak/
+            ├── module.json       <-- Манифест модуля с информацией о нём
+            └── run.ps1       <-- Исполняемый файл (один из: .ps1 / .bat / .exe / .py)
 ```
 
 🚀 Поддерживаемые типы файлов
@@ -104,5 +103,14 @@ int main() {
     std::cout << "\nНажми Enter, чтобы закрыть окно..." << std::endl;
     std::cin.get();
     return 0;
+}
+```
+ОБЯЗАТЕЛЬНЫЙ module.json
+```code
+{
+    "name": "Мой модуль",
+    "version": "1.0",
+    "author": "solevoy69",
+    "description": "Описание того что делает модуль"
 }
 ```
