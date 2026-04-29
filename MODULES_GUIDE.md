@@ -13,9 +13,9 @@ WinMagisk поддерживает модульную архитектуру. Э
 
 Пример правильной структуры:
 ```text
-├── WinMagisk.exe/
-└── modules/
-    └── user_modules/
+Roaming/
+└── WinMagisk/
+    └── modules/
         └── MyCoolTweak/
             ├── module.json       <-- Манифест модуля с информацией о нём
             └── run.ps1       <-- Исполняемый файл (один из: .ps1 / .bat / .exe / .py)
